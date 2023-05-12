@@ -1,40 +1,5 @@
-/*Local Font*/
-@font-face {
-  font-family: 'Poppins';
-  src: url("/assets/fonts/Poppins-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url("/assets/fonts/Poppins-Regular.ttf");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url("/assets/fonts/Poppins-Regular.ttf");
-  font-weight: 700;
-  font-style: bold;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url("/assets/fonts/Poppins-Regular.ttf");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url("/assets/fonts/Poppins-Regular.ttf");
-  font-weight: 800;
-  font-style: bolder;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url("/assets/fonts/Poppins-Regular.ttf");
-  font-weight: 800;
-  font-style: italic;
-}
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
 /*Custom properties*/
 :root{
   --primary-purple: hsl(259, 100%, 65%);
@@ -57,23 +22,105 @@ html {
   box-sizing: inherit;
 }
 body{
+  background-color: var(--neutral-off-white);
+  display: flex;
+  flex-direction: column;
   font-size: 3.2rem;
   font-family: var(--poppins);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card{
+  background-color: var(--neutral-white);
+  position: relative;
+  width: 55rem;
+  padding: 2rem 3rem;
+  border-radius: 2rem 2rem 20rem 2rem;
+}
+label{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 .card__select-date{
   display: flex;
   gap: 2rem;
+  border-bottom-style: groove ;
+  border-bottom-color: var(--neutral-off-white);
 }
 input{
   font-size: 3.2rem;
+  width: 12rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-style: solid;
 }
-
+.card__years-estimated{
+  line-height: 2.5rem;
+}
+span{
+  color: var(--primary-purple);
+}
+.input-estimated{
+  text-align: center;
+  font-size: 7rem;
+  border-style: none;
+  color: var(--primary-purple);
+}
+.margin{
+  margin-top: 3rem;
+}
+.date-input{
+  display: flex;
+  flex-direction: column;
+}
+.label-estimated{
+  font-size: 7rem;
+  text-transform: lowercase;
+  font-family: var(--poppins);
+  font-style: italic;
+  font-weight: 900;
+}
 /*Hide Arrows in number inputs*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   
 }
+.estimated-date{
+  font-size: 5.5rem;
+  font-style: italic;
+  font-weight: 800;
+}
 input[type=number] {
   -moz-appearance: textfield;
+}
+.button{
+  background-color: var(--primary-purple);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  bottom: 27rem;
+  right: 3rem;
+  border-style: none;
+  transition: 5ms;
+}
+.button:hover{
+  background-color: var(--neutral-off-black);
+  transition: 5ms;
+}
+.error{
+  color: var(--primary-light-red);
+  font-size: 1rem;
+}
+
+footer{
+  align-self: center;
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 2rem;
 }

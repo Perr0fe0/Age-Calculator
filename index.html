@@ -14,39 +14,56 @@
   <div class="card">
     <div class="card__select-date">
       <div class="date-input">
-        <label for="day">Day</label>
-        <input type="number" name="day" id="day-input"
+        <label id="label-day" for="day">Day</label>
+        <input type="text" name="day" id="day-input" maxlength="2"
         placeholder="DD" required>
-        <p id="error"></p>
+        <p class="error" id="error-day"></p>
       </div>
       <div class="date-input">
-        <label for="month">Month</label>
-        <input type="number" name="month" id="month-input" placeholder="MM"required>
-        <p id="error"></p>
+        <label id="label-month" for="month">Month</label>
+        <input type="number" name="month" id="month-input" maxlength="2" placeholder="MM"required>
+        <p class="error" id="error-month"></p>
       </div>
       <div class="date-input">
-        <label for="year">Year</label>
-        <input type="number" name="year" id="year-input" placeholder="YYYY"required>
-        <p id="error"></p>
+        <label id="label-year" for="year">Year</label>
+        <input type="number" name="year" id="year-input" maxlength="4" placeholder="YYYY"required>
+        <p class="error" id="error-year"></p>
       </div>
-      
+      <button id="button-cal" onclick="" class="button"><img src="/assets/images/icon-arrow.svg" alt="arrow"></button>
 
     </div>
     <div class="card__years-estimated">
-
+      <div class="margin">
+        <p class="estimated-date">
+          <span><i>--</i></span>
+          <i>days</i>
+        </p>
+      </div>
+        
+      <div class="margin">
+        <p class="estimated-date">
+          <span><i>--</i></span>
+          <i>month</i>
+        </p>
+      </div>
+      
+      <div class="margin">
+        <p class="estimated-date">
+          <span><i>--</i></span>
+          <i>years</i>
+        </p>
+      </div>
+      
     </div>
   </div>
 </main>
   
-  
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Alexander</a>.
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
