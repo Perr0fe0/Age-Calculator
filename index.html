@@ -21,36 +21,36 @@
       </div>
       <div class="date-input">
         <label id="label-month" for="month">Month</label>
-        <input type="number" name="month" id="month-input" maxlength="2" placeholder="MM"required>
+        <input type="text" name="month" id="month-input" maxlength="2" placeholder="MM"required>
         <p class="error" id="error-month"></p>
       </div>
       <div class="date-input">
         <label id="label-year" for="year">Year</label>
-        <input type="number" name="year" id="year-input" maxlength="4" placeholder="YYYY"required>
+        <input type="text" name="year" id="year-input" maxlength="4" placeholder="YYYY"required>
         <p class="error" id="error-year"></p>
       </div>
-      <button id="button-cal" onclick="" class="button"><img src="/assets/images/icon-arrow.svg" alt="arrow"></button>
+      <button onclick="calculateAge()" class="button"><img src="/assets/images/icon-arrow.svg" alt="arrow"></button>
 
     </div>
     <div class="card__years-estimated">
       <div class="margin">
         <p class="estimated-date">
-          <span><i>--</i></span>
-          <i>days</i>
+          <span id="estimatedYears"><i>--</i></span>
+          <i>years</i>
         </p>
       </div>
         
       <div class="margin">
         <p class="estimated-date">
-          <span><i>--</i></span>
+          <span id="estimatedMonths"><i>--</i></span>
           <i>month</i>
         </p>
       </div>
       
       <div class="margin">
         <p class="estimated-date">
-          <span><i>--</i></span>
-          <i>years</i>
+          <span id="estimatedDays"><i>--</i></span>
+          <i>days</i>
         </p>
       </div>
       
