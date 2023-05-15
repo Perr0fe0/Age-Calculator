@@ -34,9 +34,14 @@ body{
 .card{
   background-color: var(--neutral-white);
   position: relative;
-  width: 58rem;
+  width: 35rem;
   padding: 2rem 3rem;
   border-radius: 2rem 2rem 20rem 2rem;
+}
+@media (min-width: 758px) {
+    .card{
+      width: 58rem;
+    }
 }
 label{
   font-size: 1.5rem;
@@ -50,11 +55,17 @@ label{
   border-bottom-color: var(--neutral-off-white);
 }
 input{
-  font-size: 3.2rem;
-  width: 12rem;
+  font-size: 1.5rem;
+  width: 8rem;
   padding: 1rem;
   border-radius: 1rem;
   border-style: solid;
+}
+@media (min-width: 758px) {
+    input{
+      font-size: 3.2rem;
+      width: 12rem;
+    }
 }
 .card__years-estimated{
   line-height: 2.5rem;
@@ -104,9 +115,16 @@ input[type=number] {
   height: 8rem;
   position: absolute;
   bottom: 27rem;
-  right: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
   border-style: none;
   transition: 5ms;
+}
+@media (min-width: 758px) {
+    .button{
+      left: 51rem;
+      right: 3rem;
+    }
 }
 .button:hover{
   background-color: var(--neutral-off-black);
@@ -115,6 +133,12 @@ input[type=number] {
 .error{
   color: var(--primary-light-red);
   font-size: 1rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 758px) {
+    .error{
+      margin-bottom: 0;
+    }
 }
 
 footer{
