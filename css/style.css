@@ -34,7 +34,7 @@ body{
 .card{
   background-color: var(--neutral-white);
   position: relative;
-  width: 35rem;
+  width: 36rem;
   padding: 2rem 3rem;
   border-radius: 2rem 2rem 20rem 2rem;
 }
@@ -114,7 +114,7 @@ input[type=number] {
   width: 8rem;
   height: 8rem;
   position: absolute;
-  bottom: 27rem;
+  bottom: 27.5rem;
   left: 50%;
   transform: translateX(-50%);
   border-style: none;
@@ -124,6 +124,7 @@ input[type=number] {
     .button{
       left: 51rem;
       right: 3rem;
+      bottom: 28rem;
     }
 }
 .button:hover{
